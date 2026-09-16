@@ -142,3 +142,40 @@ header p {
     transform: none;
   }
 }
+/* Subscription section */
+.subscription {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.subscription form {
+  margin-top: 20px;
+}
+
+.subscription input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #262626;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RTL layout */
+html[dir="rtl"] body {
+  direction: rtl;
+
+}
+html[dir="rtl"] p {
+  direction: ltr;
+}
+
+.subscription .form-control {
+  max-width: 300px;
+}
