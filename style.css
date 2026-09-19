@@ -82,7 +82,8 @@ header p {
               margin-top 0.4s ease;
 }
 
-.timeline > div:hover p {
+.timeline > div:hover p,
+.timeline > div:focus-within p {
   max-height: 250px;
   opacity: 1;
   margin-top: 16px;
