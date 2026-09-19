@@ -180,3 +180,13 @@ html[dir="rtl"] p {
 .subscription .form-control {
   max-width: 300px;
 }
+
+/* Improve accessibility contrast */
+.btn-outline-primary {
+  color: #004f9e;
+  border-color: #004f9e;
+}
+
+footer a {
+  color: #6db8ff;
+}
