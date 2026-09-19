@@ -180,3 +180,26 @@ rel="stylesheet">
   </p>
   <p>&copy; 2026 Intel Sustainability Journey | Student Project</p>
 </footer>
+<script>
+  // Automatically switch between LTR and RTL based on page language
+  function updateDirection() {
+    const lang = document.documentElement.lang || "en";
+
+    const rtlLanguages = ["ar", "he", "fa", "ur"];
+
+    if (rtlLanguages.some(code => lang.startsWith(code))) {
+      document.documentElement.setAttribute("dir", "rtl");
+    } else {
+      document.documentElement.setAttribute("dir", "ltr");
+    }
+  }
+
+  updateDirection();
+
+  const observer = new MutationObserver(updateDirection);
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["lang"]
+  });
+</script>
